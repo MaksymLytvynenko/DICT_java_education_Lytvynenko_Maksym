@@ -28,5 +28,24 @@ public class ChatBot {
         for (int i = 0; i <= number; i++) {
             System.out.println(i + "!");
         }
+
+        System.out.println("Now let's do a test.");
+        System.out.println("What is a correct syntax to output \"Hello World\" in Java?");
+        System.out.println("1.  print (\"Hello World\")");
+        System.out.println("2.  System.out.println(\"Hello World\")");
+        System.out.println("3.  Console.WriteLine(\"Hello World\");");
+        System.out.println("4.  echo(\"Hello World\");");
+
+        while (true) {
+            int answer = scanner.nextInt();
+            if (answer == 2) {
+                System.out.println("Correct");
+                break;
+            } else {
+                System.out.println("Wrong");
+            }
+        }
+
+        System.out.println("Goodbye, have a nice day!");
     }
 }
